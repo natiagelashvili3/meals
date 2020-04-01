@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.lg-backdrop{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Header Start */
+header nav{
+    position: absolute;
+    top: 0;
+    background-color: white;
+    color: black;
+    z-index: 10;
+    width: 100%;
+    height: 80px;
+    transition: 0.5s ease;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand{
+    font-family: 'Courgette', cursive;
+    font-size: 50px;
+    color: #2d3436;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #2d3436;
+    transition: 0.5s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 15px;
+}
+.navbar-light .navbar-nav .nav-link:focus, 
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active{
+    color: #fa983a;
+}
+header nav.scrolling{
+    background-color: #2d3436;
+}
+header nav.scrolling.navbar-light .navbar-nav .nav-link,
+header nav.scrolling.navbar-light .navbar-brand{
+    color: white;
+}
+/* Header End */
+
+
+/* Footer Start */
+footer{
+    background-color: #2d3436;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+footer .footer-section-top{
+    padding: 100px 0;
+}
+footer .sheaderubscribe-form h2,
+footer .footer-menu h2,
+footer .footer-about h2{
+    font-family: 'Courgette', cursive;
+    margin-bottom: 30px;
+}
+footer .subscribe-form p{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+footer .footer-section-bottom{
+    padding: 0 0 50px;
+}
+footer .subscribe-form input{
+    padding: 20px 20px;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    width: 75%;
+}
+footer .subscribe-form button{
+    background-color: #fa983a;
+    border: none;
+    width: 25%;
+}
+footer .footer-about p{
+    font-size: 14px;
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+footer .socials ul li{
+    display: inline-block;
+    background-color: #fa983a;
+    transition: 0.5s ease;
+}header
+footer .socials ul li:hover{
+    background-color: #ea8c32;
+}
+footer .socials ul li a {
+    padding: 10px;
+    width: 36px;
+    display: inline-block;
+    text-align: center;
+}
+footer .socials ul li i{
+    color: white;
+}
+footer .footer-menu ul li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+footer .footer-menu ul li a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer hr{
+    width: 100%;
+    margin-bottom: 50px;
+}
+footer .copyright{
+    text-align: center;
+    width: 100%;
+}
+/* Footer End */
+
+/* Home Slider Start */
+.slider-section .slider-content{
+    height: 100vh;
+    background-image: url("../../assets/img/main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+.slider-section .slider-content .shadow-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(47, 47, 47, 0.35);
+}
+.slider-section .slider-content .container{
+    z-index: 1;
+}
+.slider-section .slider-content h1{
+    text-align: center;
+    font-family: 'Courgette', cursive;
+    font-size: 85px;
+}
+.slider-section .slider-content .slider-text h1{
+    color: white;
+}
+
+/* Home Slider End */
+
+
+/* Main About Start */
+.about-section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.about-section .about-text h2{
+    font-family: 'Courgette', cursive;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.about-section .about-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.about-section .about-text a{
+    font-family: 'Courgette', cursive;
+    background-color: #fa983a;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.about-section .about-text a:hover{
+    background-color: #ea8c32;
+}
+/* Main About End */
+
+.line{
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+/* Recipes Start */
+#recipes .recipes-section-header{
+    margin-bottom: 50px;
+}
+#recipes .recipes-section-header h3{
+    font-family: 'Courgette', cursive;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+#recipes .recipes-section-header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: #777777;
+}
+#recipes{
+    margin-bottom: 150px;
+}
+#recipes .recipe{
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+#recipes .recipe-image>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+#recipes .recipe-image{
+    width: 100%;
+    padding-top: 90%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#recipes .recipe-description .recipe-title{
+    font-family: 'Courgette', cursive;
+    margin-top: 15px;
+}
+#recipes .recipe-description .recipe-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    letter-spacing: 1px;
+}
+#recipes .discover-more a{
+    font-family: 'Courgette', cursive;
+    color: #fa983a;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+#recipes .discover-more a:hover{
+    color: #ea8c32;
+}
+/* Recipes End */
+
+/* Gallery Start */
+#gallery .container-fluid .gallery-box .gallery-box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(244, 98, 58, 0.9);
+    transition: opacity 0.25s ease;
+    text-align: center;
+}
+
+#gallery .container-fluid .gallery-box:hover .gallery-box-container{
+    opacity: 1;
+}
+
+#gallery .container-fluid .gallery-box:hover .gallery-box-container img{
+    transform: scale(1);
+}
+
+#gallery .container-fluid .gallery-box .gallery-box-container img{
+    width: 50px;
+    transform: scale(0);
+    transition: .25s ease;
+}
+#gallery .container-fluid .gallery-box>img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.gallery-box{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+/* Gallery End */
+
+
+/* Customers Review Start */
+.customers-feedback{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.customers-feedback .single-customer{
+    margin-bottom: 25px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 40px 42px;
+}
+/* .customers-feedback .single-customer .thumb{
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+.customers-feedback .single-customer .thumb img{
+    width: auto;
+} */
+.customers-feedback .owl-dots{
+    text-align: center;
+}
+.customers-feedback .owl-dots button.active span{
+    background: #fa973a;
+}
+.customers-feedback .owl-dots button span{
+    width: 25px;
+    height: 4px;
+    display: inline-block;
+    background: rgba(250, 151, 58, 0.38);
+    margin: 0 3px;
+}
+.customers-feedback-header{
+    margin-bottom: 50px;
+}
+.customers-feedback-header h3{
+    font-family: 'Courgette', cursive;
+    margin-bottom: 25px;
+}
+.customers-feedback-header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    letter-spacing: 1px;
+}
+
+.single-customer h3{
+    font-family: 'Courgette', cursive;
+    margin-bottom: 15px;
+}
+.single-customer span{
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-style: italic;
+}
+.single-customer p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    letter-spacing: 1px;
+}
+/* Customers Review End */
+
+
+/* Blog Start */
+#blog > div{
+    background-image: url('../../assets/img/gallery/food-02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    margin-bottom: 150px;
+}
+#blog>div .shadow-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(47, 47, 47, 0.35);
+}
+#blog>div .container{
+    padding: 150px 0;
+    z-index: 1;
+}
+
+#blog .blog-section h3{
+    font-family: 'Courgette', cursive;
+    font-size: 45px;
+    margin-bottom: 35px;
+    color: white;
+}
+#blog .blog-section p{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 35px;
+}
+#blog .blog-section a{
+    font-family: 'Courgette', cursive;
+    background-color: #fa983a;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+#blog .blog-section a:hover{
+    background-color: #ea8c32;
+}
+/* Blog End */
+
+
+/* Main App Start */
+.app-section{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.app-section .app-text h2{
+    font-family: 'Courgette', cursive;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+.app-section .app-text p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.app-section .app-text a{
+    font-family: 'Courgette', cursive;
+    background-color: #fa983a;
+    color: white;
+    padding: 20px 30px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.app-section .app-text a:hover{
+    background-color: #ea8c32;
+}
+.app-section .store i{
+    font-size: 50px;
+    display: inline-block;
+}
+.app-section .store div{
+    font-size: 18px;
+    width: 120px;
+    display: inline-block;
+    margin-left: 20px;
+}
+.app-section .store div span{
+    display: block;
+    font-size: 12px;
+}
+.app-store.store{
+    margin-right: 15px;
+}
+/* Main App End */
